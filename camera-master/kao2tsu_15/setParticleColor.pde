@@ -1,0 +1,274 @@
+public void setColor(int nk, int l) { 
+
+  //int [] iro =
+
+  for (VParticle p : physics.particles) {
+
+
+    int rd1 = int(random(2));
+
+    if (rd1<1) {
+      k = kao2;
+    } else {
+      k=kao3;
+    }
+
+    kao2.disableStyle();
+    kao3.disableStyle();
+
+
+    if (nk==1) {  
+
+      if (l==1) {
+        //hito-ball
+        if (sq(zahyo1[0][0]- p.x)  + sq(zahyo1[1][0] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(255, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        }
+      }
+
+      if (l==2) {
+        if (sq(zahyo1[0][0]- p.x)  + sq(zahyo1[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][1]- p.x)  + sq(zahyo1[1][1] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(255, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        }
+      }
+
+      if (l==3) {
+        if (sq(zahyo1[0][0]- p.x)  + sq(zahyo1[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][1]- p.x)  + sq(zahyo1[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][2]- p.x)  + sq(zahyo1[1][2] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        }
+      }
+
+      if (l==4) {
+        if (sq(zahyo1[0][0]- p.x)  + sq(zahyo1[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][1]- p.x)  + sq(zahyo1[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][2]- p.x)  + sq(zahyo1[1][2] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][3]- p.x)  + sq(zahyo1[1][3] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(255, 0, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        }
+      }
+
+      if (l==5) {
+        if (sq(zahyo1[0][0]- p.x)  + sq(zahyo1[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][1]- p.x)  + sq(zahyo1[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][2]- p.x)  + sq(zahyo1[1][2] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][3]- p.x)  + sq(zahyo1[1][3] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo1[0][4]- p.x)  + sq(zahyo1[1][4] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(255, 0, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 6, p.getRadius() * 8);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 6, p.getRadius() * 8);
+        }
+      }
+    }
+
+
+
+    if (nk==2) {  
+
+      if (l==1) {
+        //hito-ball
+        if (sq(zahyo2[0][0]- p.x)  + sq(zahyo2[1][0] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        }
+      }
+
+      if (l==2) {
+        if (sq(zahyo2[0][0]- p.x)  + sq(zahyo2[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][1]- p.x)  + sq(zahyo2[1][1] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        }
+      }
+
+      if (l==3) {
+        if (sq(zahyo2[0][0]- p.x)  + sq(zahyo2[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][1]- p.x)  + sq(zahyo2[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][2]- p.x)  + sq(zahyo2[1][2] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        }
+      }
+
+      if (l==4) {
+        if (sq(zahyo2[0][0]- p.x)  + sq(zahyo2[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][1]- p.x)  + sq(zahyo2[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][2]- p.x)  + sq(zahyo2[1][2] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][3]- p.x)  + sq(zahyo2[1][3] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        }
+      }
+
+      if (l==5) {
+        if (sq(zahyo2[0][0]- p.x)  + sq(zahyo2[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][1]- p.x)  + sq(zahyo2[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][2]- p.x)  + sq(zahyo2[1][2] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][3]- p.x)  + sq(zahyo2[1][3] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo2[0][4]- p.x)  + sq(zahyo2[1][4] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 0);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 6, p.getRadius() * 8);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 6, p.getRadius() * 8);
+        }
+      }
+    }
+
+    if (nk==3) {  
+
+      if (l==1) {
+        //hito-ball
+        if (sq(zahyo3[0][0]- p.x)  + sq(zahyo3[1][0] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 255);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        }
+      }
+
+      if (l==2) {
+        if (sq(zahyo3[0][0]- p.x)  + sq(zahyo3[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][1]- p.x)  + sq(zahyo3[1][1] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 255, 255);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 3, p.getRadius() * 4);
+        }
+      }
+
+      if (l==3) {
+        if (sq(zahyo3[0][0]- p.x)  + sq(zahyo3[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][1]- p.x)  + sq(zahyo3[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][2]- p.x)  + sq(zahyo3[1][2] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 0, 255);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        }
+      }
+
+      if (l==4) {
+        if (sq(zahyo3[0][0]- p.x)  + sq(zahyo3[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][1]- p.x)  + sq(zahyo3[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][2]- p.x)  + sq(zahyo3[1][2] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][3]- p.x)  + sq(zahyo3[1][3] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 0, 255);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 4.5, p.getRadius() * 6);
+        }
+      }
+
+      if (l==5) {
+        if (sq(zahyo3[0][0]- p.x)  + sq(zahyo3[1][0] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][1]- p.x)  + sq(zahyo3[1][1] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][2]- p.x)  + sq(zahyo3[1][2] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][3]- p.x)  + sq(zahyo3[1][3] - p.y) <= sq(atractor + p.getRadius())
+          | sq(zahyo3[0][4]- p.x)  + sq(zahyo3[1][4] - p.y) <= sq(atractor + p.getRadius())) {
+          //kao2.disableStyle();
+          fill(0, 0, 255);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 6, p.getRadius() * 8);
+        } else {
+          //kao2.disableStyle();
+          fill(200);
+          noStroke();
+          shape(k, p.x, p.y, p.getRadius() * 6, p.getRadius() * 8);
+        }
+      }
+    }
+  }
+}

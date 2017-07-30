@@ -1,0 +1,27 @@
+nohup: monitor.sh: No such file or directory
+nohup: monitor.sh: No such file or directory
+nohup: monitor.sh: No such file or directory
+nohup: monitor.sh: No such file or directory
+nohup: monitor.sh: No such file or directory
+OpenCV: FFMPEG: tag 0xffffffff/'ˇˇˇˇ' is not found (format 'h264 / raw H.264 video')'
+[http @ 0x7fcee971e000] Stream ends prematurely at 62432544, should be 18446744073709551615
+2017-07-31 05:11:29.047 Python[3381:136721] WARNING: -finishWriting should not be called on the main thread.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/kei/Desktop/camera3/camera3/run.py", line 43, in run
+    readFile()
+  File "/Users/kei/Desktop/camera3/camera3/fire.py", line 54, in readFile
+    data = json.load(json_file)
+  File "/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 3 (char 2)
+
+ÔºÅ
